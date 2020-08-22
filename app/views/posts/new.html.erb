@@ -1,0 +1,25 @@
+<div class="posts-new">
+  <div class="main-pnew">
+    <div class="container">
+      <h2>New List</h2>
+
+      <% @post.errors.full_messages.each do |message| %>
+        <div class="error">
+          <%= message %>
+        </div>
+      <% end %>
+      
+      <%= form_tag("/posts/create") do %>
+        <div class="new-item">
+          <input name="title" type="text" placeholder="title">
+
+          <textarea name="content" type="text" placeholder="text"></textarea>
+          <input type="submit" value="save">
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+

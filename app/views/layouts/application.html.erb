@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bon_Todo</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <%# --------- bootstrap ----------- %>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <%# --------- fontawesome ----------- %>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
+</head>
+
+<body>
+<header>
+  <div class="header-list">
+    <div id="nav-pc"><!-- pcのみ表示 -->
+      <div class="nav-pc-list">
+        <ul>
+          <% if @current_user %>
+            <li><%= link_to("Task List", "/posts/index", class: "a") %></li>
+            <li><%= link_to("New List", "/posts/new", class: "a") %></li>
+            <li><%= link_to("Logout", "/logout", {method: :post},) %></li>
+            <li><%= @current_user.name %></li>
+          <% else %>  
+            <li><%= link_to("Top", "/", class: "a") %></li>
+            <li><%= link_to("Sign up", "/signup", class: "a") %></li>
+            <li><%= link_to("Login", "/login", class: "a") %></li>
+          <% end %>  
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <%= link_to("/", class: "a") do %>
+      <h1><span class="fas fa-stream"></span>
+    <% end %>
+      Bon_ToDo
+      </h1>
+  </div>
+
+</header>
+
+  <%= yield %>
+</body>
+</html>

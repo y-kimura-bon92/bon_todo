@@ -1,0 +1,21 @@
+<div class="users-new">
+  <div class="container">
+    <div class="signup">
+      <h2>Login</h2>
+
+      <% if @error_message %>
+        <div class="error">
+          <%= @error_message %>
+        </div>
+      <% end %>
+
+      <%= form_tag("/login") do %>
+        <div class="form">
+        <input name="email" type="email" placeholder="email" value="<%= @email %>">
+        <input name="password" type="password" placeholder="password" minlength="8" value="<%= @password %>">
+        <p>※英数半角8文字以上</p>
+        <input type="submit" value="login">
+      <% end %>
+    </div>
+  </div>
+</div>

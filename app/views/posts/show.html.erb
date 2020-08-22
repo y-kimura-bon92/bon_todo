@@ -1,0 +1,14 @@
+<div class="posts-show">
+  <div class="main-pshow">
+    <div class="container">
+      <h2>List Details</h2> 
+
+      <div class="show-item">
+        <%= link_to("/posts/#{@post.id}/edit") do %>
+        <input name="title" type="text" placeholder="title" value="<%= @post.title %>" readonly>
+        <textarea name="content" type="text" placeholder="text" readonly><%= @post.content %></textarea>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

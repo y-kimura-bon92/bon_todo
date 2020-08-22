@@ -1,0 +1,24 @@
+<div class="top-image">
+<div class="users-new">
+  <div class="container">
+    <div class="signup">
+      <h2>Sign up</h2>
+
+      <% @user.errors.full_messages.each do |message| %>
+        <div class="error">
+          <%= message %>
+        </div>
+      <% end %>
+
+      <%= form_tag("/users/create") do %>
+        <div class="form">
+        <input name="name" type="text" placeholder="name" value="<%= @user.name %>">
+        <input name="email" type="email" placeholder="email" value="<%= @user.email %>">
+        <input name="password" type="password" placeholder="password" minlength="8" value="<%= @user.password %>">
+        <p>※英数半角8文字以上</p>
+        <input type="submit" value="sign up">
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>

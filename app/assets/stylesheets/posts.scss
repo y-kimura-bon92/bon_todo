@@ -1,0 +1,108 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.error {
+  color: #ff4d75;
+}
+li {
+  list-style: none;
+}
+
+
+// posts-new & edit ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+
+.posts-index,
+.posts-show,
+.posts-new {
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-pindex,
+.main-pshow,
+.main-pnew {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.show-item,
+.new-item {
+  padding: 18px 0;
+  box-shadow: 0 2px 6px #c1ced7;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 2px solid  #878C93;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.new-item input[type="text"],
+.new-item textarea[type="text"] {
+  width: 90%;
+  margin-left: 5%;
+  border: none;
+}
+.new-item input[type="text"] {
+  border-bottom: 1px solid silver;
+  margin-bottom: 15px;
+}
+.new-item textarea[type="text"] {
+  height: 200px;
+}
+
+.new-item input[type="submit"] {
+  width: 20%;
+  margin-left: 75%;
+  background-color: #2d3642;
+  color: #fff;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+//▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+// posts-show ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+.show-item input[type="text"],
+.show-item textarea[type="text"] {
+  width: 90%;
+  margin-left: 5%;
+  border: none;
+}
+.show-item input[type="text"]:hover,
+.show-item textarea[type="text"]:hover {
+  cursor: pointer;
+}
+.show-item input[type="text"] {
+  border-bottom: 1px solid silver;
+  margin-bottom: 15px;
+}
+.show-item textarea[type="text"] {
+  height: 200px;
+}
+//▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+
+.index-item {
+  padding-top: 25px;
+  border-bottom: 0.5px solid  #878C93;
+}
+.index-item:hover {
+  color: #2d3642;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.item-list {
+  color: #2d3642;
+  float: left;
+}
+.created-time {
+  text-align: right;
+  color: #2d3642;
+}

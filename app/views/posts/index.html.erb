@@ -1,0 +1,31 @@
+<div class="posts-index" onload="PageLoad();">
+  <div class="main-pindex">
+    <div class="container">
+      <h2>Task List</h2>
+
+      <% @posts.each do |post| %>
+        <div class="index-item">
+          <ul id="columns">
+            <%= link_to("/posts/#{post.id}") do %>
+              <li class="column" draggable="true">
+                <div class="item-list">
+                <%= post.title %>
+                </div>
+                <div class="created-time">
+                <%= post.created_at.strftime('%Y/%m/%d %H:%M') %>
+                </div>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<%= javascript_include_tag "posts_index.js" %>

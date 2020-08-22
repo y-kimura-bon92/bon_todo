@@ -1,0 +1,190 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  user-select: none;
+}
+.a:hover {
+  text-decoration: none;
+}
+
+// header ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+.header-list {
+  background-color: #2d3642;
+  height: 60px;
+}
+.header-list a,
+.header-list li {
+  color: #fff;
+}
+.header-list a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-list ul {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header-list li {
+  list-style: none;
+  margin: 0 auto;
+  line-height: 60px;
+  font-family: inherit;
+}
+
+.header-main {
+  background-color: #ff706c;
+  height: 180px;
+}
+
+.header-main h1 {
+  color: #fff;
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  line-height: 180px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 60px;
+  opacity: 0.8;
+}
+
+.fas {
+  margin-right: 5px;
+  border: 1px 1px silver;
+  font-size: 40px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .header-list {
+    background-color: #2d3642;
+    height: 45px;
+  }
+  .header-list li {
+    display: none;
+  }
+
+  .header-main {
+    background-color: #ff706c;
+    height: 90px;
+  }
+
+  .header-main h1 {
+    // color: #fff;
+    // font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    line-height: 90px;
+    font-size: 38px;
+  }
+  .fas {
+    font-size: 32px;
+  }
+}
+//▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+/* pcのみ表示 */
+/*▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+
+.nav-pc-list a {
+  color: #fff;
+}
+.nav-pc-list a:hover {
+  opacity: 0.4;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+/*▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
+
+
+// home-top ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+
+.top-image {
+  background-image: url("/task_images/todo.jpg");
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 700px;
+}
+
+.top-h1 {
+  color: #fff;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+.top-main h2 {
+  color: #fff;
+  font-size: 40px;
+  padding-top: 200px;
+  text-align: center;
+  line-height: 73px;
+  text-shadow: 3px 3px 3px grey;
+}
+
+.new-user,
+.login-user {
+  display: block;
+  text-align: center;
+  width: 25%;
+  border-radius: 50px;
+  padding: 15px;
+  box-shadow: 3px 3px 3px grey;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.new-user:active,
+.login-user:active {
+  box-shadow: none;
+}
+
+.new-user {
+  color: #fff;
+  background-color:  #2d3642;
+  margin-top: 120px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.new-user:hover {
+  color: #fff;
+}
+.login-user {
+  color: #2d3642;
+  background-color: #fff;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.login-user:hover {
+  color: #2d3642;
+}
+
+@media screen and (max-width: 768px) {
+  .top-image {
+    height: 350px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+  }
+
+  .top-main h2 {
+    font-size: 16px;
+    padding-top: 125px;
+    line-height: 51px;
+  }
+  .top-main a {
+    width: 45%;
+    margin: 40px auto;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+}

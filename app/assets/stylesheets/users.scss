@@ -1,0 +1,86 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.users-new {
+  background-color: #f1f1f1;
+  background-image: url("/task_images/todo.jpg");
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 700px;
+}
+
+.signup {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 500px;
+}
+.signup h2 {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  opacity: 0.8;
+  color: #ff706c;
+  align-items: center;
+  display: flex;
+  letter-spacing: 2px;
+}
+.signup h2:before, 
+.signup h2:after {
+	content: "";
+	flex-grow: 1;
+	height: 2px;
+	background: #ff706c;
+	display: block;
+}
+.signup h2:before {
+	margin-right: .4em;
+}
+.signup h2:after {
+	margin-left: .4em;
+}
+
+.form p {
+  margin-left: 17%;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #2d3642;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 70%;
+  border: 1px solid #2d3642;
+  margin-left: 15%;
+  margin-top: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 2%;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  outline: none;
+}
+.form input[type="submit"] {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #2d3642;
+  color: #fff;
+  box-shadow: 0 2px 6px silver;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  outline: none;
+}
+
