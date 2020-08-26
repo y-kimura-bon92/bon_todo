@@ -1,6 +1,7 @@
 <div class="posts-new">
   <div class="main-pnew">
     <div class="container">
+    
       <h2>New List</h2>
 
       <% @post.errors.full_messages.each do |message| %>
@@ -18,6 +19,7 @@
         </div>
       <% end %>
 
+      <a href="javascript:history.back()" style="color: #ff706c;">[戻る]</a>
     </div>
   </div>
 </div>

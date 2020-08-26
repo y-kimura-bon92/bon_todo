@@ -18,6 +18,7 @@ class UsersController < ApplicationController
       password: params[:password]
     )
     if @user.save
+      session[:user_id] = @user.id
       redirect_to('/posts/index')
     else
       render('users/new')

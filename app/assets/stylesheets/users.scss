@@ -84,3 +84,11 @@
   outline: none;
 }
 
+@media screen and (max-width: 768px) {
+  .signup {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 500px;
+  }
+  
+}

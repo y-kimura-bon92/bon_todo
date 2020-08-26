@@ -106,3 +106,14 @@ li {
   text-align: right;
   color: #2d3642;
 }
+
+@media screen and (max-width: 768px) {
+
+  .main-pindex,
+  .main-pshow,
+  .main-pnew {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}

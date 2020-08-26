@@ -39,7 +39,30 @@
         </ul>
       </div>
     </div>
+
+    <div id="nav-drawer"><!-- スマホのみ表示 -->
+
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+        <ul>
+          <% if @current_user %>
+            <li><%= link_to("Task List", "/posts/index", class: "a") %></li>
+            <li><%= link_to("New List", "/posts/new", class: "a") %></li>
+            <li><%= link_to("Logout", "/logout", {method: :post},) %></li>
+            <li><%= @current_user.name %></li>
+          <% else %>
+            <li><%= link_to("Top", "/", class: "a") %></li>
+            <li><%= link_to("Sign up", "/signup", class: "a") %></li>
+            <li><%= link_to("Login", "/login", class: "a") %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>     
   </div>
+
+
   <div class="header-main">
     <%= link_to("/", class: "a") do %>
       <h1><span class="fas fa-stream"></span>
