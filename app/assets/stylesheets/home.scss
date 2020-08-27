@@ -44,11 +44,11 @@ html {
 .header-main h1 {
   color: #fff;
   font-family: 'Lato', 'Helvetica Neue', sans-serif;
-  // line-height: 180px;
+  line-height: 180px;
   font-weight: 400;
   letter-spacing: 1px;
   text-align: center;
-  // font-size: 60px;
+  font-size: 60px;
   opacity: 0.8;
 }
 
@@ -289,9 +289,16 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  
   .top-image {
     height: 350px;
     margin-bottom: 80px;
+  }
+  .header-main h1 {
+    line-height: 90px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 40px;
   }
 
   .top-main h2 {
